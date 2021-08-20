@@ -16,7 +16,15 @@ public:
     ~Translator();
 
 private slots:
+    void Translate();
+
     void on_translatebutton_clicked();
+
+    void on_inputlang_currentTextChanged(const QString &arg1);
+
+    void on_outputlang_currentTextChanged(const QString &arg1);
+
+    void on_swap_button_clicked();
 
 private:
     Ui::Translator *ui;
